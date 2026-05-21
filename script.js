@@ -1,4 +1,18 @@
-// Loader
+window.onload = function () {
+
+    const menuToggle =
+        document.getElementById("menu-toggle");
+
+    const navLinks =
+        document.getElementById("nav-links");
+
+    menuToggle.onclick = function () {
+
+        navLinks.classList.toggle("active");
+
+    };
+
+};// Loader
 
 window.addEventListener("load", () => {
 
@@ -49,6 +63,18 @@ ScrollReveal().reveal('.project-card', {
 
 });
 
+/*const menuToggle =
+document.getElementById("menu-toggle");
+
+const navLinks =
+document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+});*/
+
 // Navbar Active Link
 
 const sections = document.querySelectorAll("section");
@@ -83,3 +109,6 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+// MOBILE MENU
+
